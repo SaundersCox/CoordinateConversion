@@ -2,8 +2,12 @@
 public class PushMe {
 
 	public static void main(String[] args) {
-		System.out.println("Push me");
-		double eightBit = Math.pow(2, 8);
-		System.out.println(eightBit);
+		
+		Consume hungryBoy = new Consume("Todd");
+		hungryBoy.tryConsume();
+		hungryBoy.tryConsume(10);
+		hungryBoy.tryConsume();
+		hungryBoy.tryGather(10);
+		hungryBoy.tryConsume(10);
 	}
 }
